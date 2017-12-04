@@ -1,0 +1,11 @@
+Exo2.0 Italic
+OpenSasns Bold
+	Semibold
+OpenSans
+PTSans Regular
+	NarrowBold
+	Bold
+	Narrow
+
+$a_r: #d92929
+$a_b: #303864

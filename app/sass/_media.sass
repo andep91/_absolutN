@@ -1,0 +1,173 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+@media only screen and (max-width : 1247px)
+	.header .navigation
+		display: none
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+@media only screen and (max-width : 991px)
+	.container
+		width: 100%
+	/**/
+
+@media only screen and (max-width : 959px)
+	.main_menu .container
+		text-align: center
+	.main_menu .container .menu>li>a
+		padding: 0 5px 16px
+	.main_menu .container .menu>li:last-child a
+		padding-right: 5px
+
+@media only screen and (max-width : 919px)
+	.header
+		height: 100%
+		.container
+			.block_logo, .block_right, .block_bottom
+				position: relative
+				text-align: center
+				width: 100%
+			.block_bottom
+				padding-left: 30px 
+	.header .container .block_right .search
+		width: 60%
+	.header .container .block_right .search .input
+		width: 100%
+	.header .container .block_right .call_back .block_write
+		width: 80%
+		left: 10%
+
+@media only screen and (max-width : 907px)
+	
+	/**/
+@media only screen and (max-width : 869px)
+	.header .container .block_bottom
+		background-image: none
+
+@media only screen and (max-width : 817px)
+	.main_menu .container .mobile_menu
+		display: block
+		background-color: #4a476a
+	.hamburger
+		//padding-bottom: 8px
+	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		background-color: #FFF
+	.main_menu .container .mobile_menu span
+		vertical-align: middle
+	.main_menu .container .mobile_menu > span
+		color: #fff
+		margin-left: -10px
+		&:hover
+			cursor: pointer
+	.menu
+		display: none
+		position: absolute
+		z-index: 1
+		background-color: #211f3a
+		width: 100%
+	.main_menu .container, .main_menu .container .menu>li>a>span
+		text-align: left
+	.main_menu .container .menu>li
+		display: block
+	.main_menu .container .menu > li .submenu
+		position: relative
+		top: 0
+		left: 0
+		border-left: none
+		border-right: none
+		border-bottom: none
+	.main_menu .container .menu > li .submenu > li .submenu
+		top: 0
+		left: 0
+		border-bottom: 1px solid #dadae1
+	.main_menu .container .menu>li>a
+		display: block
+		padding: 4px 6px 
+		margin: 0
+		border-bottom: 1px solid #4a476a
+		border-left: none
+	.main_menu .container .menu > li:last-child a
+		border-right: none
+	.main_menu .container .menu>li>a>span
+		display: block
+		margin-bottom: 0px
+	.main_menu .container .menu>li .submenu>li:last-child a
+		border-bottom: 1px solid #dadae1
+	.main_menu .container .menu>li .submenu>li .submenu:last-child
+		border-bottom: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+@media only screen and (max-width : 631px)
+	.header .container 
+		.block_logo .h1
+			margin-top: 0px
+		.block_bottom
+			white-space: normal
+
+@media only screen and (max-width : 599px)
+	.header .container .block_bottom
+		display: none
+	.header .container .block_right .search, 
+	.header .container .block_right .search .input
+		width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.header .container
+		padding-left: 5px
+		padding-right: 5px
+		.block_logo
+			.h1
+				font-size: 30px
+			.text
+				font-size: 22px
+	/**/
+
+@media only screen and (max-width : 369px)
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
