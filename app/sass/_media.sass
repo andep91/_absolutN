@@ -29,6 +29,14 @@
 	.main_menu .container .menu>li:last-child a
 		padding-right: 5px
 
+	.cards .item
+		width: 25%
+		&:last-child
+			display: none
+	.cards .item a
+		padding: 6px
+
+
 @media only screen and (max-width : 919px)
 	.header
 		height: 100%
@@ -111,6 +119,15 @@
 @media only screen and (max-width : 768px)
 	/**/
 
+@media only screen and (max-width : 753px)
+	.cards .item
+		width: 50%
+	.cards .item .card_img
+		min-height: 230px
+	.cards .item .block, .cards .item .block .adres, .cards .item .block .metro
+		min-height: auto
+	/**/
+
 @media only screen and (max-width : 631px)
 	.header .container 
 		.block_logo .h1
@@ -124,6 +141,14 @@
 	.header .container .block_right .search, 
 	.header .container .block_right .search .input
 		width: 100%
+
+@media only screen and (max-width : 584px)
+	.cards .item
+		width: 100%
+		&:last-child
+			display: inline-block
+	.cards .item .card_img
+		height: auto
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

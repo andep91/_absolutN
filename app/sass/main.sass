@@ -28,7 +28,6 @@ body textarea:required:valid
 
 body
 	min-width: 320px
-	min-height: 1000px
 	position: relative
 	line-height: 1
 	background-color: #f3f3f7
@@ -48,6 +47,10 @@ body, p, ul, li, span, h1, h2, h3, input, textarea
 a, a:hover
 	text-decoration: none
 	cursor: pointer	
+
+img
+	width: 100%
+	object-fit: cover
 
 .navigation
 	position: absolute
@@ -70,6 +73,24 @@ a, a:hover
 	max-width: 960px
 	height: 100%
 	margin: 0 auto
+
+.section_header
+	background-color: #fff
+	text-align: center
+	padding: 16px
+	text-transform: uppercase
+	font: 26px PTSansNarrow
+	border-top: 1px solid #a5aac4
+	border-bottom: 1px solid #a5aac4
+	box-shadow: inset 0px 2px 4px rgba(23,29,81,.3)
+	&:before
+		content: ''
+		display: inline-block
+		width: 35px
+		height: 32px
+		margin-right: 12px
+		margin-top: -6px
+		background-image: url("/img/m_i_c.png")
 
 .header
 	position: relative
@@ -97,6 +118,7 @@ a, a:hover
 		background-color: rgba(255,255,255,.72)
 		border-radius: 0 0 10px 10px
 		.logo
+			width: auto
 			margin-top: 16px
 		.h1
 			margin-top: 28px
@@ -304,5 +326,144 @@ a, a:hover
 							> li > a
 								padding-right: 10px
 
+
+
+
+
+.cards
+	background-color: #f3f3f7
+	padding-bottom: 46px
+	.item
+		position: relative
+		border-left: 1px solid #303864
+		width: 20%
+		display: inline-block
+		vertical-align: top
+		margin-right: -4px
+		&:before
+			content: ''
+			top: 0
+			left: 0
+			position: absolute
+			height: 100%
+			width: 100%
+			background-color: rgba(255,255,255,.4)
+		&:hover
+			cursor: pointer
+			box-shadow: 0px 0px 18px #211f3a
+			z-index: 10000
+			transition: all .4s
+			&:before
+				display: none
+		.card_img
+			height: 120px
+		.block
+			min-height: 200px
+			background-color: #fff
+			padding-left: 8px
+			padding-right: 8px
+			font-size: 16px
+			font-family: PTSansRegular
+			color: #303864
+			.h2
+				font-family: PTSansNarrowBold
+				padding-top: 12px
+				padding-bottom: 6px
+				margin-left: -4px
+				margin-right: -4px
+				text-align: center
+				text-transform: uppercase
+				font-size: 18px
+			.cost, .phone, .adres, .metro
+				margin-top: 2px
+				line-height: 1.2
+			.cost
+				font-size: 16px
+				.red
+					font-family: PTSansNarrowBold
+					font-size: 20px
+					color: #d92929
+			.phone
+				line-height: 1.6
+			.adres
+				min-height: 40px
+			.metro
+				padding-bottom: 8px
+				min-height: 46px
+			.bold
+				font-family: PTSansNarrowBold
+		a
+			height: 48px
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			width: 100%
+			color: #fff
+			font-size: 18px
+		&:last-child
+			border-right: 1px solid #303864
+		&:nth-child(1)
+			.metro
+				color: #009817
+			a
+				background-color: #009817
+		&:nth-child(2)
+			.metro
+				color: #ff5500
+			a
+				background-color: #ff5500
+		&:nth-child(3)
+			.metro
+				color: #e00000
+			a
+				background-color: #e00000
+		&:nth-child(4)
+			.metro
+				color: #600071
+			a
+				background-color: #600071
+		&:nth-child(5)
+			.metro
+				color: #04b1e8
+			a
+				background-color: #04b1e8
+
+
+.maps
+	.content
+		background-color: #FFF
+		margin: 26px 2%
+		border: 1px solid #a5aac4
+		padding-top: -2px
+		.map
+			display: inline-block
+			text-align: center
+			width: 50%
+			padding: 10px 0
+			&:hover
+				cursor: pointer
+			p
+				text-align: left
+				display: inline-block
+				font: 24px PTSansNarrow
+				background-repeat: no-repeat
+			&:nth-child(1)
+				border-right: 1px solid #a5aac4
+				p
+					padding-left: 50px
+					color: #d92929
+					background-image: url("/img/m_i_l_a.png")
+			&:nth-child(2)
+				border-bottom: 1px solid #a5aac4
+				background-color: #ebeaf2
+				p
+					padding-left: 56px
+					color: #303864
+					background-image: url("/img/m_i_r.png")
+		img
+			width: 92%
+			height: auto
+			margin: 30px 4%
 
 @import "media" // Всегда в конце
