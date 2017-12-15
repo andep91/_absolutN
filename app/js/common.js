@@ -2,9 +2,38 @@ $(function() {
 
 
 
+	$('.w_h').eq(0).css('display','block');
+	$('.header .right').click(function () {
+		h_c = $('.header .w_h').length;
+		for(i = 0; i < h_c; i++){
+			if($('.w_h').eq(i).css('display') == 'block'){
+				$('.w_h').eq(i).css('display', 'none');
+				$('.w_h').eq(++i).css('display', 'block');
+			};
+			if(i == h_c){
+				$('.w_h').eq(i).css('display', 'none');
+				$('.w_h').eq(0).css('display', 'block');
+			};
+		};
+	});
+	$('.header .left').click(function () {
+		for(i = h_c-1; i >= 0; i--){
+			if($('.w_h').eq(i).css('display') == 'block'){
+				$('.w_h').eq(i).css('display', 'none');
+				$('.w_h').eq(--i).css('display', 'block');
+			};
+			if(i == -1){
+				$('.w_h').eq(i).css('display', 'none');
+				$('.w_h').eq(h_c-1).css('display', 'block');
+			};
+		};
+	});
 
 
-	if ($(document).width() <= 817){
+
+
+
+	if ($(document).width() <= 991){
 		$('.mobile_menu').click(function(){
 			$('.hamburger').toggleClass('is-active');
 			$('.menu').toggle();
@@ -12,10 +41,12 @@ $(function() {
 				$('.submenu:eq(0)').toggle();
 			});
 			$('.active:eq(1)').click(function () {
+				$('.active:eq(1) a:last').css('border-bottom','1px solid #dadae1');
 				$('.submenu:eq(1)').toggle();
 				$('.submenu:eq(0)').toggle();
-			});			
+			});
 			$('.active:eq(2)').click(function () {
+				$('.active:eq(2) li:first a').css('border-top','1px solid #dadae1');
 				$('.submenu:eq(2)').toggle();
 				$('.submenu:eq(0)').toggle();
 			});
@@ -32,6 +63,13 @@ $(function() {
 				$('.submenu:eq(0)').css('display', 'block');
 			}).mouseout(function(){
 				$('.submenu:eq(1)').css('display', 'none');
+				$('.submenu:eq(0)').css('display', 'none');
+			});
+			$('.active:eq(2), .submenu:eq(2)').mouseover(function() {
+				$('.submenu:eq(2)').css('display', 'block');
+				$('.submenu:eq(0)').css('display', 'block');
+			}).mouseout(function(){
+				$('.submenu:eq(2)').css('display', 'none');
 				$('.submenu:eq(0)').css('display', 'none');
 			});
 			$('.active:eq(0)').mouseout(function(){
@@ -51,38 +89,6 @@ $(function() {
 
 
 
-	$('.header .right').click(function () {
-		switch ('block'){
-			case $('.w_h_1').css('display'):
-				$('.w_h_1').css('display', 'none');
-				$('.w_h_2').css('display', 'block');
-				break;
-			case $('.w_h_2').css('display'):
-				$('.w_h_2').css('display', 'none');
-				$('.w_h_3').css('display', 'block');
-				break;
-			case $('.w_h_3').css('display'):
-				$('.w_h_3').css('display', 'none');
-				$('.w_h_1').css('display', 'block');
-				break;
-		}
-	});
-	$('.header .left').click(function () {
-		switch ('block'){
-			case $('.w_h_3').css('display'):
-				$('.w_h_3').css('display', 'none');
-				$('.w_h_2').css('display', 'block');
-				break;
-			case $('.w_h_2').css('display'):
-				$('.w_h_2').css('display', 'none');
-				$('.w_h_1').css('display', 'block');
-				break;
-			case $('.w_h_1').css('display'):
-				$('.w_h_1').css('display', 'none');
-				$('.w_h_3').css('display', 'block');
-				break;
-		}
-	});
 
 
 
