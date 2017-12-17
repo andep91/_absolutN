@@ -2,6 +2,14 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1299px)
+	.slider .left
+		left: -50px
+	.slider .right
+		right: -50px
+		
+	/**/
+
 
 @media only screen and (max-width : 1247px)
 	.header .navigation
@@ -18,7 +26,27 @@
 		padding-right: 19.125px
 	.main_menu .container .menu>li .submenu
 		left: 248px
+
+
+
+	.slider .content .cost
+		margin-right: 20px
 	/**/
+
+
+@media only screen and (max-width : 1079px)
+	.slider:before
+		height: 68px
+	.slider .left, .slider .right
+		top: -54px
+	.slider .left
+		left: inherit
+		right: 80px
+	.slider .right
+		right: 20px
+	/**/
+
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -132,6 +160,29 @@
 		margin: 0 auto
 		width: 122px
 		display: block
+
+
+	.slider .content .photos
+		margin-bottom: 24px
+	.slider .content .photos img
+		height: auto
+	.slider .content .photos .col-xs-5
+		width: 48.5%
+	.slider .content .photos .photo_first
+		width: 100%
+		height: auto
+	.slider .content .description
+		padding-left: 0
+	.slider .content .cost
+		text-align-last: left
+		margin-right: 0
+		vertical-align: middle
+		margin-bottom: 20px
+	.slider .content .cost:before
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+		margin-right: 10px
 	/**/
 
 @media only screen and (max-width : 959px)
@@ -140,16 +191,12 @@
 	.news_articles .content
 		margin-left: 2%
 		margin-right: 2%
+	.slider .container
+		padding-left: 2%
+		padding-right: 2%
+	.slider .content .photos .col-xs-5:nth-child(1)
+		width: 48.25%
 	/**/
-		
-
-
-
-
-
-			
-
-
 
 @media only screen and (max-width : 919px)
 	/**/
@@ -169,8 +216,7 @@
 @media only screen and (max-width : 768px)
 	/**/
 
-@media only screen and (max-width : 767px)
-
+@media only screen and (max-width : 749px)
 	/**/
 
 @media only screen and (max-width : 719px)
@@ -183,6 +229,23 @@
 		height: auto
 	.cards .container .row .item:last-child
 		display: block
+
+
+
+	.slider .content .photos .col-xs-5
+		width: 48.25%
+
+
+
+	/**/
+
+@media only screen and (max-width : 710px)
+	/**/
+
+
+@media only screen and (max-width : 654px)
+	.slider .content .photos .col-xs-5
+		width: 48.125%
 	/**/
 
 @media only screen and (max-width : 631px)
@@ -191,6 +254,16 @@
 			margin-top: 0px
 		.block_bottom
 			white-space: normal
+	/**/
+
+@media only screen and (max-width : 615px)
+	.slider .content .photos .col-xs-5
+		width: 48%
+	/**/
+
+@media only screen and (max-width : 615px)
+	.slider .content .photos .col-xs-5
+		width: 48%
 	/**/
 
 @media only screen and (max-width : 599px)
@@ -204,6 +277,14 @@
 	.cards .item .card_img
 		height: auto
 
+@media only screen and (max-width : 580px)
+	.slider .content .photos .col-xs-5
+		width: 47.75%
+
+@media only screen and (max-width : 522px)
+	.slider .content .photos .col-xs-5
+		width: 47.5%
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.header .container
@@ -215,6 +296,38 @@
 			.text
 				font-size: 22px
 	/**/
+
+@media only screen and (max-width : 522px)
+	.slider .content .photos .col-xs-5
+		width: 47.25%
+
+@media only screen and (max-width : 438px)
+	.slider .content .photos .col-xs-5
+		width: 47%
+	.slider .content .cost
+		display: flex
+		justify-content: center
+		align-items: center
+
+@media only screen and (max-width : 407px)
+	.slider .content .photos .col-xs-5
+		width: 46.75%
+
+@media only screen and (max-width : 380px)
+	.slider .content .photos .col-xs-5
+		width: 46.5%
+
+@media only screen and (max-width : 357px)
+	.slider .content .photos .col-xs-5
+		width: 46.25%
+
+@media only screen and (max-width : 337px)
+	.slider .content .photos .col-xs-5
+		width: 46%
+
+@media only screen and (max-width : 320px)
+	.slider .content .photos .col-xs-5
+		width: 45.75%
 
 @media only screen and (max-width : 369px)
 	/**/

@@ -136,4 +136,15 @@ $(function() {
 	};
 
 
+
+
+	if ($(document).width() > 991){
+		for(var i=0; i<3; i++){
+			card_text = $('.slider .cost:eq('+i+')').text();
+			card_text = card_text.replace(' ', '<br>');
+			$('.slider .cost:eq('+i+')').html(card_text);
+		};
+	}
+
+
 });

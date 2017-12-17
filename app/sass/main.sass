@@ -579,15 +579,19 @@ img
 		content: ''
 		display: block
 		height: 34px
-		box-shadow: inset 0px 2px 7px rgba(23,29,81,.3)
+		box-shadow: inset 0px 3px 10px rgba(23,29,81,.2)
+	.container
+		position: relative
 	.navigation
 		background-color: rgba(150,146,202,.17)
+		top: 44%
 		&:hover
 			background-color: rgba(217,41,41,.17)
 	.left
-		left: 50px
+		left: -100px
+		right: 0
 	.right
-		right: 50px
+		right: -100px
 	.slider_header
 		width: 100%
 		background-color: #04b1e8
@@ -600,16 +604,50 @@ img
 		border: 1px solid #04b1e8
 		.photos
 			img
-				width: 204px
 				height: 134px
+			.photo_first
+				width: 428px
+				height: 270px
+				margin-bottom: 20px
+			.col-xs-5
+				width: 44.25%
 				&:nth-child(1)
-					width: 428px
-					height: 270px
-					margin-bottom: 20px
-				&:nth-child(2)
-					margin-right: 16px
+					margin-right: 20px
+		.description
+			padding-left: 20px
+			font: 20px PTSansRegular
+			color: $a_b
+		.costs, .phone
+			margin-bottom: 34px
 		.cost
-			float: left
+			text-align: center
+			margin-right: 22px
+			padding: 0px
+			&:last-child
+				margin-right: 0
+			&:before
+				content: ''
+				display: block
+				background-repeat: no-repeat
+				background-position: center
+				height: 80px
+				width: 80px
+				margin: 0 auto
+				border-radius: 80px
+				border: 2px solid $a_b
+				margin-bottom: 20px
+			&:nth-child(1)
+				&:before
+					background-image: url("/img/s_i_1.png")
+			&:nth-child(2)
+				&:before
+					background-image: url("/img/s_i_2.png")
+			&:nth-child(3)
+				&:before
+					background-image: url("/img/s_i_3.png")
+		.phone span
+			color: $a_r
+
 
 
 
