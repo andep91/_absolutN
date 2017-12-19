@@ -578,8 +578,9 @@ img
 	&:before
 		content: ''
 		display: block
-		height: 34px
-		box-shadow: inset 0px 3px 10px rgba(23,29,81,.2)
+		height: 8px
+		margin-bottom: 24px
+		background: linear-gradient(to bottom, #e0e1e8, #fcfcfd);
 	.container
 		position: relative
 	.navigation
@@ -614,7 +615,7 @@ img
 				&:nth-child(1)
 					margin-right: 20px
 		.description
-			padding-left: 20px
+			padding-left: 16px
 			font: 20px PTSansRegular
 			color: $a_b
 		.costs, .phone
@@ -630,10 +631,10 @@ img
 				display: block
 				background-repeat: no-repeat
 				background-position: center
-				height: 80px
-				width: 80px
+				height: 72px
+				width: 72px
 				margin: 0 auto
-				border-radius: 80px
+				border-radius: 72px
 				border: 2px solid $a_b
 				margin-bottom: 20px
 			&:nth-child(1)
@@ -646,7 +647,131 @@ img
 				&:before
 					background-image: url("/img/s_i_3.png")
 		.phone span
+			white-space: nowrap
 			color: $a_r
+
+
+
+.request
+	display: none
+
+
+
+
+.footer
+	background-color: #211f3a
+	color: #9290a9
+	padding-bottom: 76px
+	.logo
+		padding-top: 30px
+		padding-bottom: 12px
+		border-bottom: 1px solid #3d3a58
+		margin-bottom: 16px
+	.contacts, .links, .widgets, .block_right
+		display: inline-block
+		vertical-align: top
+		width: 25%
+		float: left
+	.contacts
+		.text
+			font: 16px PTSansRegular
+			margin-bottom: 18px
+		.phones, .email
+			line-height: 1.9
+			padding-left: 32px
+			background-repeat: no-repeat
+		.phones
+			background-image: url("/img/f_i_p.png")
+		.email
+			background-image: url("/img/f_i_e.png")
+	.links
+		padding-left: 44px
+		li
+			line-height: 1.75		
+			a
+				font: 18px PTSansRegular
+				color: #9290a9
+				border-bottom: 1px solid #9290a9
+				&:hover
+					color: #da2d2d
+					border-bottom: 1px solid #da2d2d
+					transition: all 0.2s ease
+		.social
+			margin-top: 26px
+			.vk, .fb, .ok
+				display: inline-block
+				width: 38px
+				height: 38px
+				border-radius: 38px
+				background-color: #303864
+				margin-right: 4px
+				text-align: center
+				line-height: 38px
+				color: #fff
+				&:hover
+					color: #d92929
+					cursor: pointer
+				.fa
+					font-size: 16px
+	.block_right
+		position: relative
+		text-align: right
+		min-height: 217px
+		.search
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			margin-bottom: 20px
+			.input
+				position: relative
+				width: 222px
+				padding: 12px 36px 12px 12px
+				background-color: rgba(255,255,255,.72)
+				border-radius: 10px
+				color: #211f3a
+				font: 14px OpenSans
+				&:focus
+					outline: none
+					box-shadow: 0px 0px 2px grey
+					transition: .4s ease
+				&::-webkit-input-placeholder
+					color: #211f3a
+					opacity: 1
+
+				&:-moz-placeholder
+					color: #211f3a
+					opacity: 1
+
+				&::-moz-placeholder
+					color: #211f3a
+					opacity: 1
+
+				&:-ms-input-placeholder
+					color: #211f3a
+					opacity: 1
+			.submit
+				position: absolute
+				right: 12px
+				top: 34%
+				width: 17px
+				height: 17px
+				background-image: url('/img/h_i_s.png')
+				background-color: transparent
+		.development
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 164px
+			padding-top: 10px
+			padding-right: 86px
+			font: 12px OpenSans
+			text-align: left
+			background-image: url("/img/f_i_t.png")
+			background-repeat: no-repeat
+			background-position: right center
+
+
+
 
 
 

@@ -146,5 +146,8 @@ $(function() {
 		};
 	}
 
+	if ($(window).width() <= 701){
+		$('.footer .development').text('');
+	};
 
 });

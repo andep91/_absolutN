@@ -36,7 +36,7 @@
 
 @media only screen and (max-width : 1079px)
 	.slider:before
-		height: 68px
+		margin-bottom: 60px
 	.slider .left, .slider .right
 		top: -54px
 	.slider .left
@@ -183,7 +183,12 @@
 		vertical-align: middle
 		margin-bottom: 0
 		margin-right: 10px
-	/**/
+
+	.footer .block_right, .footer .contacts, .footer .links, .footer .widgets
+		width: 33%
+	.footer .widgets
+		display: none
+	/*-------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (max-width : 959px)
 	.maps .content,
@@ -194,8 +199,9 @@
 	.slider .container
 		padding-left: 2%
 		padding-right: 2%
-	.slider .content .photos .col-xs-5:nth-child(1)
-		width: 48.25%
+	.slider .content .photos .col-xs-5:nth-child(1),
+	.slider .content .photos .col-xs-5
+		width: 48%
 	/**/
 
 @media only screen and (max-width : 919px)
@@ -213,13 +219,10 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-@media only screen and (max-width : 749px)
-	/**/
-
-@media only screen and (max-width : 719px)
+@media only screen and (max-width : 777px)
+	.footer
+		padding-left: 2%
+		padding-right: 2%
 	/**/
 
 @media only screen and (max-width : 753px)
@@ -229,23 +232,32 @@
 		height: auto
 	.cards .container .row .item:last-child
 		display: block
-
-
-
-	.slider .content .photos .col-xs-5
-		width: 48.25%
-
-
-
 	/**/
 
-@media only screen and (max-width : 710px)
+@media only screen and (max-width : 701px)
+	.footer
+		padding-bottom: 10px
+	.footer .block_right .search .input, .footer .block_right .search .submit, .footer .counter
+		display: none
+	.footer .contacts, .footer .links
+		width: 50%
+	.footer .block_right
+		top: -24px
+		width: 100%
+		min-height: inherit
+		.development
+			height: 31px
 	/**/
 
 
 @media only screen and (max-width : 654px)
 	.slider .content .photos .col-xs-5
-		width: 48.125%
+		//width: 48.125%
+	/**/
+
+@media only screen and (max-width : 634px)
+	.slider .content .photos .col-xs-5
+		//width: 48%
 	/**/
 
 @media only screen and (max-width : 631px)
@@ -258,12 +270,7 @@
 
 @media only screen and (max-width : 615px)
 	.slider .content .photos .col-xs-5
-		width: 48%
-	/**/
-
-@media only screen and (max-width : 615px)
-	.slider .content .photos .col-xs-5
-		width: 48%
+		//width: 47%
 	/**/
 
 @media only screen and (max-width : 599px)
@@ -272,18 +279,29 @@
 	.header .container .block_right .search, 
 	.header .container .block_right .search .input
 		width: 100%
+	/**/
 
 @media only screen and (max-width : 584px)
-	.cards .item .card_img
-		height: auto
+	/**/
 
 @media only screen and (max-width : 580px)
+	.slider .content .photos .col-xs-5:nth-child(1),
 	.slider .content .photos .col-xs-5
-		width: 47.75%
+		width: 47.5%
+
+	/**/
+
+@media only screen and (max-width : 561px)
+	.footer .contacts
+		width: 40%
+	.footer .links
+		width: 60%
+	/**/
 
 @media only screen and (max-width : 522px)
 	.slider .content .photos .col-xs-5
-		width: 47.5%
+		//width: 46%
+	/**/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -297,43 +315,73 @@
 				font-size: 22px
 	/**/
 
-@media only screen and (max-width : 522px)
-	.slider .content .photos .col-xs-5
-		width: 47.25%
-
-@media only screen and (max-width : 438px)
+@media only screen and (max-width : 476px)
+	.slider .content .photos .col-xs-5:nth-child(1),
 	.slider .content .photos .col-xs-5
 		width: 47%
+	/**/
+
+@media only screen and (max-width : 438px)
 	.slider .content .cost
 		display: flex
-		justify-content: center
 		align-items: center
+		&:before
+			flex-shrink: 0;
+	.slider .content .cost:before
+		margin: 0 10px 0 0
+	.slider .content .cost
+		text-align: left
+
+@media only screen and (max-width : 456px)
+	.footer .contacts, .footer .links
+		width: 100%
+	.footer .links
+		padding-left: 0
+	.footer	.links ul
+		display: none
+
 
 @media only screen and (max-width : 407px)
-	.slider .content .photos .col-xs-5
-		width: 46.75%
-
-@media only screen and (max-width : 380px)
-	.slider .content .photos .col-xs-5
-		width: 46.5%
-
-@media only screen and (max-width : 357px)
-	.slider .content .photos .col-xs-5
-		width: 46.25%
-
-@media only screen and (max-width : 337px)
+	.slider .content .photos .col-xs-5:nth-child(1),
 	.slider .content .photos .col-xs-5
 		width: 46%
-
-@media only screen and (max-width : 320px)
-	.slider .content .photos .col-xs-5
-		width: 45.75%
+		//width: 46%
 
 @media only screen and (max-width : 369px)
 	/**/
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
+	.slider .content .photos .col-xs-5:nth-child(1),
+	.slider .content .photos .col-xs-5
+		width: 45%
+
+	.request
+		display: block
+		text-align: center
+		padding-left: 2%
+		padding-right: 2%
+		.h2
+			text-transform: uppercase
+			font: 20px PTSansRegular
+			color: $a_b
+			padding: 30px 0
+		input
+			font: 14px PTSansRegular
+			width: 100%
+			padding: 20px
+			margin-bottom: 10px
+			&:last-child
+				width: 60%
+				border-radius: 10px
+				background-color: $a_r
+				color: #fff
+				margin-bottom: 0px
+		.text
+			margin-top: 20px
+			margin-bottom: 40px
+			color: $a_r
+			font-size: 13px
 	/**/
 
 
